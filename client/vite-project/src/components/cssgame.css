@@ -1,0 +1,40 @@
+.canvas-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+  }
+
+
+
+#ghost{
+
+    position: absolute;
+    max-width: 90%;
+    max-height: 90%;
+    transform: translate(-50%, -50%); /* Fine-tunes the centering */
+    top: 50%; /* Centers the button canvas vertically */
+    left: 50%; /* Centers the button canvas horizontally */
+}
+
+#button-canvas {
+
+    position: absolute;
+    /* Other styles for button canvas */
+    /* Example styles */
+    top: 50%; /* Centers the button canvas vertically */
+    left: 50%; /* Centers the button canvas horizontally */
+    transform: translate(-50%, -50%); /* Fine-tunes the centering */
+    z-index: -1;
+    max-width: 90%;
+    max-height: 90%;
+    animation: blinking 1s linear infinite;
+}
+
+@keyframes blinking {
+    0% { opacity: 1; }
+    49.999% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+    }
